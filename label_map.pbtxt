@@ -1,0 +1,29 @@
+    item {  
+      id: 6  
+      name: 'Yogurt'  
+    }  
+      
+    item {  
+      id: 5  
+      name: 'Tissue'  
+    }  
+
+    item {  
+      id: 4  
+      name: 'RobotArm'  
+    }  
+      
+    item {  
+      id: 3  
+      name: 'Pie'  
+    }  
+
+    item {  
+      id: 2  
+      name: 'LemonSlices'  
+    }  
+      
+    item {  
+      id: 1 
+      name: 'AdapterBox'  
+    }  
