@@ -9,10 +9,10 @@ import  xml.etree.cElementTree as et
 import os
 
 
-train_dir_path = "/home/wsf/data-xml/train"
-train_output_path = "/home/wsf/images_tfrecords/train.tfrecords"
-val_dir_path = "/home/wsf/data-xml/val"
-val_output_path = "/home/wsf/images_tfrecords/val.tfrecords"
+train_dir_path = "/home/wsf/Documents/data-xml/train"
+train_output_path = "/home/wsf/Documents/images_tfrecords/train.tfrecords"
+val_dir_path = "/home/wsf/Documents/data-xml/val"
+val_output_path = "/home/wsf/Documents/images_tfrecords/val.tfrecords"
 
 image_format = b'jpg'
 
@@ -87,6 +87,6 @@ def readXML(dir_path, output_path):
 
     writer.close()
 
-if __name__ == '__main':
+if __name__ == '__main__':
     readXML(train_dir_path, train_output_path)
     readXML(val_dir_path, val_output_path)
