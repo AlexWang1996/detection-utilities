@@ -16,8 +16,12 @@ def split_datasets(filepath):
     if(os.path.exists(filepath + 'train')):
         shutil.rmtree(filepath + 'train')
         os.mkdir(filepath + 'train')
+    else:
+        os.mkdir(filepath + 'train')
     if(os.path.exists(filepath + 'val')):
         shutil.rmtree(filepath + 'val')
+        os.mkdir(filepath + 'val')
+    else:
         os.mkdir(filepath + 'val')
     for file in os.listdir(filepath):
         if file.endswith('.xml'):
@@ -29,7 +33,7 @@ def split_datasets(filepath):
     for item in test_ :
         shutil.copyfile(filepath + item,filepath + 'val' + '/' + item )
 
-    print train_
+    print(train_)
 
 
 

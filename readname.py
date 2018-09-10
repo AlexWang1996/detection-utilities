@@ -7,7 +7,7 @@ __author__ = 'Alex Wang'
 import os
 import xml.etree.cElementTree as et
 
-path = "/home/wsf/Documents/data-xml/val/"
+path = "/home/wsf/Desktop/DHL_Project/DHL_Aug_Xmls/val/"
 
 
 for item in os.listdir(path):
@@ -20,7 +20,7 @@ for item in os.listdir(path):
 
     print(filename)
 
-path = "/home/wsf/Documents/data-xml/train/"
+path = "/home/wsf/Desktop/DHL_Project/DHL_Aug_Xmls/train/"
 
 for item in os.listdir(path):
     output_file = open(path + 'train.txt', "a")
